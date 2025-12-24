@@ -1,0 +1,30 @@
+.myBoxRed
+{
+    background-color: red;
+    width: 100px;
+}
+
+.myBoxBlue
+{
+    background-color: blue;
+    width: 100px;
+}
+
+.basicBox
+{
+    width: 100px;
+    height: 75px;
+
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.toleft
+{
+    float: left;
+}
+
+.clc
+{
+    clear: left;
+}
