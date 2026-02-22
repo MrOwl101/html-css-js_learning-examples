@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+ <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+ <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+ <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>textBoxesFlex</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="inputShade" class="wholePage" style="position: fixed; top: 0; left: 0; background-color: rgba(128, 128, 128, 0.5); display: none; align-items: center; justify-content: center;">
+            <div style="width: auto; height: 4ch; background-color: white; display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid black;">
+                <form id="overlayForm">
+                    <input type="text" id="overlayInput" name="userAddedText">
+                </form>
+            </div>
+        </div>
+        <div class="wholePage">
+            <div id="textInputColumn">
+                <div>
+                    <div><b>Dodaj tekst:</b></div>
+                    <form id="myForm">
+                        <input type="text" name="userAddedText">
+                        <input type="submit" value="enter">
+                        <input name="resetAll" style="background-color: rgb(244, 57, 57);" type="button" value="reset all boxes" >
+                    </form>
+                    <button onclick="downloadTxt()">Download TXT</button>
+                </div>
+            </div>
+                
+            <div id="textBoxesColumn">
+                <div class="box">example text</div>
+                <div class="box">example text 2</div>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+ </html>
